@@ -1,0 +1,19 @@
+<component name="libraryTable">
+  <library name="antlr-2.7.7">
+    <CLASSES>
+      <root url="jar://C:/app/HibernateFiles/required/antlr-2.7.7.jar!/" />
+      <root url="jar://C:/app/HibernateFiles/required/byte-buddy-1.8.12.jar!/" />
+      <root url="jar://C:/app/HibernateFiles/required/classmate-1.3.4.jar!/" />
+      <root url="jar://C:/app/HibernateFiles/required/dom4j-1.6.1.jar!/" />
+      <root url="jar://C:/app/HibernateFiles/required/hibernate-commons-annotations-5.0.3.Final.jar!/" />
+      <root url="jar://C:/app/HibernateFiles/required/hibernate-core-5.3.1.Final.jar!/" />
+      <root url="jar://C:/app/HibernateFiles/required/jandex-2.0.3.Final.jar!/" />
+      <root url="jar://C:/app/HibernateFiles/required/javassist-3.22.0-GA.jar!/" />
+      <root url="jar://C:/app/HibernateFiles/required/javax.persistence-api-2.2.jar!/" />
+      <root url="jar://C:/app/HibernateFiles/required/jboss-logging-3.3.2.Final.jar!/" />
+      <root url="jar://C:/app/HibernateFiles/required/jboss-transaction-api_1.2_spec-1.1.1.Final.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

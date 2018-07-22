@@ -1,0 +1,83 @@
+JFDML JFormDesigner: "6.0.2.0.116" Java: "1.8.0_152-release" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq {par l {seq l {space :p:57:p, par l:::p {seq l {comp label8:::p::p, space :p:32:p, comp passwordField:::p:147:p}, seq l {par t:::p {seq l {space :p:2:p, comp label4:::p::p, space ::44:x, comp genderComboBox:::p:162:p}, seq l {par t {comp label2::t:p::p, comp label3::t:p::p}, space :p:27:p, par l:::p {comp firstNameTextField::::162:x, comp lastNameTextField:::::x}}}, par l {seq l {space :p:89:p, par l {comp label6::l:p::p, comp label5::l:p:44:p}, space :::x, par l {comp facultyComboBox::t:p:162:p, comp dobTextField::t:p:162:p}}, seq t {space :p:72:p, comp label7:::p::p, space s:::p, comp departmentComboBox:::p:162:p}}}}}, seq l {space :p:204:p, comp signUpButton:::p:89:p, space :p:114:p, comp loginButton:::p:89:p}, seq l {space :p:36:p, comp separator1:::p:645:p}}, space ::102:x}}"
+			"$verticalGroup": "par l {seq l {space :p:46:p, par l {seq {par b {comp label2::b:p:28:p, comp firstNameTextField::b:p::p}, space :p:62:p, par b {comp label3::b:p:28:p, comp lastNameTextField::b:p::p}}, seq {par b {comp label5::b:p:28:p, comp dobTextField::b:p::p}, space :p:53:p, par b {comp label6::b:p:28:p, comp facultyComboBox::b:p::p}}}, space :p:51:p, par l:::p {par b {comp label4::b:p:28:p, comp genderComboBox::b:p::p}, comp label7:::p:28:p, comp departmentComboBox:::p::p}, space ::33:x, comp separator1:::p:27:p, space s:::p, par b {comp label8::b:p:28:p, comp passwordField::b:p::p}, space :p:61:p, par b {comp signUpButton::b:p::p, comp loginButton::b:p::p}, space :p:45:p}}"
+		} ) {
+			name: "this"
+			"title": "STUDENT REGISTRATION"
+			"background": sfield java.awt.Color black
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"text": "FIRSTNAME"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label3"
+				"text": "LASTNAME"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label4"
+				"text": "GENDER"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label5"
+				"text": "DOB"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label6"
+				"text": "FACULTY"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label7"
+				"text": "DEPARTMENT"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label8"
+				"text": "PASSWORD"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "firstNameTextField"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "lastNameTextField"
+			} )
+			add( new FormComponent( "javax.swing.JComboBox" ) {
+				name: "genderComboBox"
+			} )
+			add( new FormComponent( "javax.swing.JComboBox" ) {
+				name: "facultyComboBox"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "facultyComboBoxActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JComboBox" ) {
+				name: "departmentComboBox"
+			} )
+			add( new FormComponent( "javax.swing.JPasswordField" ) {
+				name: "passwordField"
+			} )
+			add( new FormComponent( "javax.swing.JFormattedTextField" ) {
+				name: "dobTextField"
+				addEvent( new FormEvent( "java.awt.event.FocusListener", "focusGained", "dobTextFieldFocusGained", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "signUpButton"
+				"text": "SIGNUP"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "signUpButtonActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "loginButton"
+				"text": "LOGIN"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "loginButtonActionPerformed", true ) )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "loginButtonActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JSeparator" ) {
+				name: "separator1"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 785, 525 )
+		} )
+	}
+}

@@ -1,0 +1,45 @@
+JFDML JFormDesigner: "6.0.2.0.116" Java: "1.8.0_152-release" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq {space :::p, par l {seq l {par l {comp label1:::p:110:p, comp label2::l:p:110:p}, space :p:60:p, par l {comp c_saveButton:::p::p, par l:l {par l:t::p {comp departmentComboBox:::::x, comp c_codeTextField:::p:200:p}, comp c_nameTextField::t:p:200:p, comp c_creditsTextField::t:p:200:p}}}, comp label3::l:p:110:p}, space ::422:x}}"
+			"$verticalGroup": "par l {seq {space :p:28:p, comp departmentComboBox:::p::p, space s:::p, par l {seq l {comp c_codeTextField:::p::p, space :p:61:p, par b {comp c_nameTextField::b:p::p, comp label2::b:p:22:p}}, comp label1::l:p:22:p}, space :p:45:p, par b {comp label3::b:p:22:p, comp c_creditsTextField::b:p::p}, space :p:46:p, comp c_saveButton:::p::p, space ::250:x}}"
+		} ) {
+			name: "this"
+			add( new FormComponent( "javax.swing.JComboBox" ) {
+				name: "departmentComboBox"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "c_codeTextField"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "c_nameTextField"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "c_saveButton"
+				"text": "save department"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "c_saveButtonActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": "CODE"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"text": "NAME"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label3"
+				"text": "CREDITS"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "c_creditsTextField"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 400, 300 )
+		} )
+	}
+}
